@@ -1,0 +1,11 @@
+<div class="letter-container" >
+  <span
+    class="letter"
+    [style.color]='letterColored ? letterColor : ""'
+    (mouseover)="enableLetterHover()"
+    (mouseleave)="disableLetterHover()"
+    (transitionend)="transitionEnd($event)"
+  >
+    {{letter | uppercase}}
+  </span>
+</div>

@@ -1,12 +1,4 @@
-@font-face {
-  font-family: "bold-font";
-  src: url("/assets/fonts/plex-bold.ttf");
-}
-
-.letter-container {
-  font-family: "bold-font";
-  font-size: 16vw;
-  color: white;
+.acronym-container {
   display: flex;
   height: 100%;
   align-items: stretch;
