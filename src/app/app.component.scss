@@ -1,10 +1,15 @@
 @font-face {
   font-family: "bold-font";
-  src: url("../assets/plex-bold.ttf");
+  src: url("/assets/fonts/plex-bold.ttf");
 }
 
 .letter-container {
   font-family: "bold-font";
   font-size: 16vw;
   color: white;
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+  align-content: center;
+  justify-content: center;
 }
