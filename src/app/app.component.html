@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-container">
+  <div class="acronym-container">
+    <app-letter
+      *ngFor="let letter of lettersData"
+      [letter]="letter"
+      (click)="letterClicked(letter)">
+    </app-letter>
+  </div>
+
+  <div class="letter-info-container" >
+    <app-letter-info [letter]="currentLetter"></app-letter-info>
+  </div>
+</div>
