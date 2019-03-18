@@ -6,20 +6,25 @@
   </div>
   <h1 class="title">{{letter.title}}</h1>
 
-  <div
-    *ngFor="let def of letter.definitions; let i = index"
-    class="definition-container">
-    <div class="number">{{i+1}}.</div>
-    <div class="definition">
-      <span class="word-type">{{def.grammarType}}</span>
-      <span> – </span>
-      {{def.definition}}
+  <div class="definitions-container">
+    <div
+      *ngFor="let def of letter.definitions; let i = index"
+      class="def-container">
+      <div class="number">{{i+1}}.</div>
+      <div class="definition">
+        <span class="word-type">{{def.grammarType}}</span>
+        <span> – </span>
+        {{def.definition}}
+      </div>
     </div>
+
+  <div class="align-right">
+    <a
+      *ngIf="letter.definitionSource.text"
+      class="source-link" 
+      href="{{letter.definitionSource.url}}">source: {{letter.definitionSource.text}}</a>
   </div>
-  <a
-    *ngIf="letter.definitionSource.text"
-    class="source-link" 
-    href="{{letter.definitionSource.url}}">source: {{letter.definitionSource.text}}</a>
+  </div>
   <a
     href="#"
     aria-label="Close" 
