@@ -2,7 +2,7 @@
   *ngIf="letter"
   class=info-container >
   <div class="flag">
-    <img src="../assets/images/flags/{{letter.flag}}">
+    <img src="assets/images/flags/{{letter.flag}}">
   </div>
   <h1 class="title">{{letter.title}}</h1>
 
@@ -19,7 +19,7 @@
   <a
     *ngIf="letter.definitionSource.text"
     class="source-link" 
-    href="letter.definitionSource.url">source: {{letter.definitionSource.text}}</a>
+    href="{{letter.definitionSource.url}}">source: {{letter.definitionSource.text}}</a>
   <a
     href="#"
     aria-label="Close" 
