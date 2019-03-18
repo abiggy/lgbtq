@@ -1,6 +1,8 @@
 # Lgbtq
 
 Angular app to define the acronym.
+abiggy.com/lgbtq
+
 
 ## Development server
 
