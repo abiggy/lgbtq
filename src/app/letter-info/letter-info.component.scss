@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "helv-bold";
+  src: url("/assets/fonts/helv-bold.ttf");
+}
+@font-face {
+  font-family: "helv-bold-italic";
+  src: url("/assets/fonts/helv-bold-italic.ttf");
+}
+
+@font-face {
+  font-family: "helv-italic";
+  src: url("/assets/fonts/helv-italic.ttf");
+}
+
+@font-face {
+  font-family: "helv-black";
+  src: url("/assets/fonts/helv-black.otf");
+}
+
+.info-container {
+  font-family: "helv-bold";
+  font-size: 20px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+
+  border: 4px solid white;
+  border-bottom-style: none;
+
+  color: white;
+  padding: 4vw;
+  border-radius: 20px 20px 0 0;
+
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+
+  .flag {
+    display: flex;
+    justify-content: center;
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .title {
+    font-size: 8vw;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    font-family: "helv-bold";
+  }
+
+  .definition-container {
+    display: flex;
+    margin: 0.8vh 0;
+    .number {
+      flex-grow: 0;
+      font-size: calc(10px + 2vw);
+      font-family: "helv-bold";
+      padding-left: 15px;
+      padding-right: 25px;
+    }
+    .definition {
+      flex-grow: 1;
+      font-size: calc(10px + 1vw);
+      .word-type {
+        font-size: calc(10px + 0.8vw);
+        font-family: "helv-bold-italic";
+      }
+    }
+  }
+
+  .source-link {
+    font-family: "helv-bold-italic";
+    font-size: calc(10px + 0.2vw);
+    text-decoration: none;
+    text-align: right;
+    margin-top: 10px;
+    color: white;
+    &:hover {
+      color: orange;
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+    &:before,
+    &:after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: white;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

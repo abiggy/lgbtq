@@ -1,18 +1,22 @@
 @font-face {
-  font-family: "bold-font";
+  font-family: "plex-bold";
   src: url("/assets/fonts/plex-bold.ttf");
 }
 
 .letter-container {
   height: 100%;
-  margin: 1vw;
+  margin: 0 1vw 0;
 }
 
 .letter {
+  display: inline-block;
+  height: 100%;
+
   cursor: pointer;
-  font-family: "bold-font";
+  font-family: "plex-bold";
   font-size: 16vw;
   color: white;
+
   -webkit-transition: color 1s ease-in-out;
   -moz-transition: color 1s ease-in-out;
   -o-transition: color 1s ease-in-out;

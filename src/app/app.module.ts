@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LetterComponent } from './letter/letter.component';
+import { LetterInfoComponent } from './letter-info/letter-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LetterComponent
+    LetterComponent,
+    LetterInfoComponent
   ],
   imports: [
     BrowserModule

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { Letter } from "../shared/models/letter.model";
 
 @Component({
   selector: "app-letter",
@@ -6,8 +7,8 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./letter.component.scss"],
 })
 export class LetterComponent implements OnInit {
-  @Input() letter: string;
-  @Input() letterColor: string;
+  @Input() letter: Letter;
+  @Input() click: () => void;
 
   letterColored = false;
   letterHover = false;
